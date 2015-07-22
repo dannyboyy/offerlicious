@@ -6,7 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+
+<!-- Add controller name class to body. This allows customization of stylesheets by controller. -->
+<body class="<%= controller.controller_name %>">
 
 <%= yield %>
 
