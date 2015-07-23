@@ -48,4 +48,6 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'normalize-rails', '~> 3.0.3'
 # Use randumb to retrieve random ActiveRecord records 
 gem 'randumb', '~> 0.5.0'
+gem 'will_paginate', '~> 3.0.7'
+gem 'will_paginate-bootstrap'
 

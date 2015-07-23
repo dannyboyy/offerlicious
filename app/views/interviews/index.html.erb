@@ -4,9 +4,14 @@
   <div class="site-wrapper-inner">
     <div class="cover-container">
       <div class="inner cover">
-        <h2 class="cover-heading"><%= @interviews %></h2>
+        <% for interview in @interviews %>
+          <h2 class="cover-heading"><%= interview.question %></h2>
+        <% end %>
       </div>
     </div>
-    <%= link_to "Next Question", class: "btn btn-defaul" %>
+    <%= will_paginate @interviews, :page_links => false %>
   </div>
 </div>
+
+
+

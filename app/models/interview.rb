@@ -9,7 +9,4 @@
 #
 
 class Interview < ActiveRecord::Base
-	def random_question
-		Interview.order_by_rand.first
-	end
 end
