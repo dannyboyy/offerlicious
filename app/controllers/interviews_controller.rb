@@ -4,7 +4,7 @@ class InterviewsController < ApplicationController
   # GET /interviews
   # GET /interviews.json
   def index
-    @interviews = Interview.all
+    @interviews = Interview.all.order_by_rand.first
   end
 
   # GET /interviews/1

@@ -1,3 +1,18 @@
+# == Route Map
+#
+#         Prefix Verb   URI Pattern                    Controller#Action
+#  welcome_index GET    /welcome/index(.:format)       welcome#index
+#     interviews GET    /interviews(.:format)          interviews#index
+#                POST   /interviews(.:format)          interviews#create
+#  new_interview GET    /interviews/new(.:format)      interviews#new
+# edit_interview GET    /interviews/:id/edit(.:format) interviews#edit
+#      interview GET    /interviews/:id(.:format)      interviews#show
+#                PATCH  /interviews/:id(.:format)      interviews#update
+#                PUT    /interviews/:id(.:format)      interviews#update
+#                DELETE /interviews/:id(.:format)      interviews#destroy
+#           root GET    /                              welcome#index
+#
+
 Rails.application.routes.draw do
   get 'welcome/index'
 
