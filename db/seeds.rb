@@ -5,3 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require 'faker'
+# encoding: utf-8
+Interview.delete_all
+
+50.times do
+	Interview.create!(
+  question: Faker::Lorem.sentence
+ )
+end
+
+
+puts "Seed finished"
+puts "#{Interview.count} fake interview questions created"

@@ -50,4 +50,6 @@ gem 'normalize-rails', '~> 3.0.3'
 gem 'randumb', '~> 0.5.0'
 gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
+# Use faker gem to generate fake data
+gem 'faker', '~> 1.4.3'
 
