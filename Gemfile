@@ -52,4 +52,4 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'will_paginate-bootstrap'
 # Use faker gem to generate fake data
 gem 'faker', '~> 1.4.3'
-
+gem 'devise', '~> 3.5.1'
