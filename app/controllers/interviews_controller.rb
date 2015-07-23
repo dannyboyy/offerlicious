@@ -4,7 +4,8 @@ class InterviewsController < ApplicationController
   # GET /interviews
   # GET /interviews.json
   def index
-    @interviews = Interview.all.paginate(page: params[:page], per_page: 1)
+    @interviews = Interview.all
+    @random_question = Interview.order_by_rand.first
   end
 
   # GET /interviews/1

@@ -4,12 +4,9 @@
   <div class="site-wrapper-inner">
     <div class="cover-container">
       <div class="inner cover">
-        <% for interview in @interviews %>
-          <h2 class="cover-heading"><%= interview.question %></h2>
-        <% end %>
+        <h2 class="cover-heading"><%= @random_question.question %></h2>
       </div>
     </div>
-    <%= will_paginate @interviews, :page_links => false %>
   </div>
 </div>
 
